@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .outer{
+            height: 300px;
+            width: 300px;
+            transform-style: preserve-3d;
+        }
+        .box1{
+            height: 300px;
+            width: 300ox;
+            background-color: yellow;
+            transform: rotateY(180deg);
+            position: absolute;
+        }
+        .box1 img{
+            height: 50%;
+            width: 50%;
+        }
+        .box2{
+            height: 300px;
+            width: 300px;
+            background-color: cyan;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+        .outer:hover{
+            transform: rotateY(180deg);
+            transition: 3s ease;
+        }
+    </style>
+    <h1>Flip Flop card</h1>
+    <div class="outer">
+        <div class="box1">
+            <img src="cheryy.webp" alt="">
+        </div>
+        <div class="box2">456</div>
+    </div>
+</body>
+</html>
